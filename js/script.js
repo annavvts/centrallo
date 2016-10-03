@@ -7,6 +7,15 @@ for (var i = 0; i < button.length; i++){
 	});
 }
 
+var newButton = document.querySelectorAll(".post__info--share");
+
+var newElement = document.querySelector(".share");
+for (var i = 0; i < button.length; i++){
+	newButton[i].addEventListener("click", function(){
+    newElement.classList.toggle("share--show");
+	});
+}
+
 var close = document.querySelectorAll(".share__close");
 
 var popup = document.querySelector(".share");
