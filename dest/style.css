@@ -1042,9 +1042,6 @@ a {
 .download__close:after{
   transform: rotate(-45deg);
 }
-.download--show .header{
-  margin-top: 50px;
-}
 .share{
   width: 100%;
   min-height: 100%;
