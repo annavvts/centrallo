@@ -1,0 +1,92 @@
+.header {
+	background-color: #3c434a;
+	position: relative;
+
+	@media (--tablet-widths) {
+		margin-top: 50px;
+	}
+
+	@media (--mobile-widths) {
+		margin-top: 50px;
+	}
+
+	&__wrapper {
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 22px 0;
+
+		@media (--desktop-widths) {
+			width: 960px;
+		}
+
+		@media (--tablet-widths) {
+			width: 720px;
+		}
+
+		@media (--mobile-widths) {
+			width: 296px;
+		}
+	}
+
+	&__logo {
+
+		@media (--desktop-widths) {
+			width: 137px;
+		}
+
+		@media (--tablet-widths) {
+			width: 105px;
+		}
+
+		@media (--mobile-widths) {
+			width: 108px;
+		}
+	}
+
+	&__sign-link {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 500;
+		color: #37b7ec;
+		border-bottom: 0.5px solid #37b7ec;
+
+		@media (--mobile-widths) {
+			display: none;
+		}
+
+		&--mobile {
+			
+			@media (--desktop-widths) {
+				display: none;
+			}
+
+			@media (--tablet-widths) {
+				display: none;
+			}
+
+			@media (--mobile-widths) {
+				display: block;
+				border: none;
+			}
+		}
+	}
+
+	&__description {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 500;
+		color: #979ea4;
+
+		@media (--mobile-widths) {
+			display: none;
+		}
+	}
+
+	&__log-in {
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #ffffff;
+	}
+}

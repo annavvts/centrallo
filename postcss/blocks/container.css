@@ -1,0 +1,13 @@
+.container {
+	background-image: url("../img/pat.png");
+	padding-bottom: 78px;
+	position: relative;
+
+	@media (--retina) {
+		background-image: url("../img/pat@2x.png");
+	}
+
+	@media (--retina-3x) {
+		background-image: url("../img/pat@3x.png");
+	}
+}
