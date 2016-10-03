@@ -20,10 +20,22 @@ var closer = document.querySelectorAll(".download__close");
 
 var header = document.querySelector(".header");
 
-var download = document.querySelector(".download");
+var download = document.querySelector(".download--android");
 for (var i = 0; i < closer.length; i++){
 	closer[i].addEventListener("click", function(){
     download.classList.remove("download--show");
+    header.style.margin="0 0 0 0";
+	});
+}
+
+var closing = document.querySelectorAll(".download__close");
+
+var header = document.querySelector(".header");
+
+var downloadApp = document.querySelector(".download--apple");
+for (var i = 0; i < closing.length; i++){
+	closing[i].addEventListener("click", function(){
+    downloadApp.classList.remove("download--show");
     header.style.margin="0 0 0 0";
 	});
 }
