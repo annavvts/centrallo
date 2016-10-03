@@ -1,7 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
-var jshint = require("jshint");
+var jslint = require('gulp-jslint');
 var csslint = require("csslint");
 var postcss = require("gulp-postcss");
 var customMedia = require("postcss-custom-media")
@@ -9,10 +9,10 @@ var autoprefixer = require("autoprefixer");
 var precss = require("precss");
 var server = require("browser-sync").create();
 
-gulp.task("jshint", function(){
-  return gulp.src(paths.src.scripts)
-    .pipe(jshint())
-    .pipe(jshint.reporter("jshint-stylish"));
+gulp.task("gulp-jslint", function () {
+    return gulp.src([paths.src.js])
+      .pipe(jslint({}))
+      .pipe(jslint.reporter( "my-reporter" ));
 });
 
 gulp.task("csslint", function(){
